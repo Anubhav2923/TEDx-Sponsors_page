@@ -9,6 +9,7 @@
 #main {
   background-color: #000;
   color: #fff;
+  overflow: hidden;
 }
 
 .flex {
@@ -155,6 +156,13 @@ button:hover {
 
 /* MOBILE CSS CODE */
 @media only screen and (max-width: 650px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  #main {
+    overflow-x: hidden;
+    width: 100%;
+  }
   #navbar {
     height: auto;
     padding: 0 5%;
